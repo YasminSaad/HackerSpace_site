@@ -23,14 +23,25 @@ body {
 
 @media only screen and (max-width: 923px) {
     header {
+        position: fixed;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 30px;
+
+        border-bottom: solid var(--branco) 2px;
+
         #logo {
             font-family: "Orbitron", sans-serif;
+            color: var(--verde-limao);
             font-size: 16px;
         }
     }
 
     main {
-    height: calc(100vh-330px);
+    height: calc(100vh 330px);
     }
 
     aside {

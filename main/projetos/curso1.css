@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+    text-decoration: none;
+}
+
+:root {
+    --branco: #f2f3f5;
+    --verde-limao: #E9FC87;
+    --preto: #141414;
+}
+
+body {
+    background-color: var(--preto);
+}
+
+/* VIEW NO CELULAR */
+
+@media only screen and (max-width: 923px) {
+    header {
+        position: fixed;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 30px;
+
+        border-bottom: solid var(--branco) 2px;
+
+        #logo {
+            font-family: "Orbitron", sans-serif;
+            color: var(--verde-limao);
+            font-size: 16px;
+        }
+    }
+
+    main {
+    height: calc(100vh 330px);
+    }
+
+    aside {
+    flex: 1 1 100vw;
+    height: 100px;
+    }
+}

@@ -13,10 +13,14 @@
     --branco: #f2f3f5;
     --verde-limao: #E9FC87;
     --preto: #141414;
+    --verde2: #c6e7a3;
 }
 
 body {
     background-color: var(--preto);
+
+    display: grid;
+    grid-template-columns: minmax(14rem, 30%) 1fr;
 }
 
 /* VIEW NO CELULAR */
@@ -42,6 +46,29 @@ body {
 
     main {
     height: calc(100vh 330px);
+
+    .raincode {
+        display: inline-flex;
+
+        margin-left: 80px;
+
+        gap: 10px;
+
+        transform: rotate(-90deg);
+    }
+
+    .raincode_txt1, .raincode_txt2, .raincode_txt3 {
+        font-family: "Orbitron", sans-serif;
+        color: var(--verde-limao);
+        font-size: 8px;
+    }
+
+    .btn_noticias {
+        font-family: "Orbitron", sans-serif;
+        color: var(--branco);
+        font-size: 20px;
+        border: 5px var(--verde-limao);
+    }
     }
 
     aside {

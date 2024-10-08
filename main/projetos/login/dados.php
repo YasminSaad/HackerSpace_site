@@ -17,9 +17,10 @@
     if($post)
     {
         echo "Dados armazenados";
+        header("location: ../../genzi.html");
     }
     else {
-        echo "Erro no aramazenamento dos dados";
+        echo "Erro no aramazenamento dos dados - Possível problema nos dados inseridos";
     }
 
     ?>

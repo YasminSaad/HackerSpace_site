@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackerSpace</title>
-    <link rel="icon" href="#">
+    <link rel="icon" href="img/Logo.svg">
     <link rel="stylesheet" href="genzi.css">
 </head>
 
-<header>
-    <a href="genzi.html" id="logo">HACKERSPACE</a>
+<body>
+        <!-- MENU-BAR DESKTOP-->
+        <aside>
+            <div class="menu_lateral">
+                <div class="nav_lateral">
+                    <a href="#" class="link_open_titulo">OPEN/CLOSE</a> <!-- hover mensagem: O HS está aberto -->
+                    <div class="link_manzanos">
+                        <img src="img/icons/icon_manzanos_static.svg" alt="manzanos" class="link_manzanos_img">
+                        <!-- usar if para animação com hover -->
+                        <a href="#" class="link_manzanos_titulo">MANZANOS</a>
+                    </div>
+                    <a href="#cursos" class="link_cursos_titulo">CURSOS</a>
+                </div>
+            </div>
+        </aside>
 
-    <!-- MENU-BAR MOBILE-->
-    <div class="links">
-        <button id="openMenu">&#9776;</button>
+    <header>
+        <a href="genzi.html" id="logo">HACKERSPACE</a>
 
-        <nav>
-            <button id="closeMenu">X</button>
-            <a href="#">Início</a>
-            <a href="#">Projetos</a>
-            <a href="#">Manzanos</a>
-        </nav>
-    </div>
-</header>
+        <!-- MENU-BAR MOBILE-->
+        <div class="links_mobile">
+            <button id="openMenu">&#9776;</button>
 
-    <!-- MENU-BAR DESKTOP-->
-<aside>
-<div class="menu_lateral">
-    <div class="nav_lateral">
-        <a href="#" class="link_open_titulo">OPEN/CLOSE</a> <!-- hover mensagem: O HS está aberto -->
-        <div class="link_manzanos">
-            <img src="img/icons/icon_manzanos_static.svg" alt="manzanos" class="link_manzanos_img">   <!-- usar if para animação com hover -->
-            <a href="#" class="link_manzanos_titulo">MANZANOS</a>
+            <nav>
+                <button id="closeMenu">X</button>
+                <a href="#">Início</a>
+                <a href="#">Projetos</a>
+                <a href="#">Manzanos</a>
+            </nav>
         </div>
-        <a href="#cursos" class="link_cursos_titulo">CURSOS</a>
-    </div>
-</div>
-</aside>
+    </header>
 
-<main>
-    <div class="raincode">
-        <p class="raincode_txt1">H<br>A<br>C<br>K<br>E<br>R</p>
-        <p class="raincode_txt2">H<br>A<br>C<br>K<br>E<br>R<br>S<br>P<br>A<br>C<br>E</p>
-        <p class="raincode_txt3">H<br>A<br>C<br>K<br>E<br>R<br>S<br>P<br>A<br>C<br>E<br>I<br>F<br>U<br>S<br>P</p>
-    </div>
+    <div class="hiato"></div>
 
-    <div class="quadro_intro">
-        <!-- ANIMAÇÃO JAVASCRIPT -->
-    </div>
+    <main>
+        <h3 href="#" class="btn_noticias">N<br>E<br>W<br>S</h3>
+        <!-- LINHA DE LIGAÇÃO BOTÃO NOTICIAS E QUADRO DE AVISOS -->
 
-    <h3 href="#" class="btn_noticias">N<br>E<br>W<br>S</h3>
-    <!-- LINHA DE LIGAÇÃO BOTÃO NOTICIAS E QUADRO DE AVISOS -->
+        <div class="quadro_intro">
+            <!-- ANIMAÇÃO JAVASCRIPT -->
+        </div>
 
-    <div id="cursos">
-        <div class="curso1"><a href="projetos/curso1.html" class="link_curso1">NOME CURSO1</a></div>
-        <div class="projeto2"></div>
-        <div class="projeto3"></div>
-    </div>
-</main>
+        <div class="raincode">
+            <p class="raincode_txt1">H<br>A<br>C<br>K<br>E<br>R</p>
+            <p class="raincode_txt2">H<br>A<br>C<br>K<br>E<br>R<br>S<br>P<br>A<br>C<br>E</p>
+            <p class="raincode_txt3">H<br>A<br>C<br>K<br>E<br>R<br>S<br>P<br>A<br>C<br>E<br>I<br>F<br>U<br>S<br>P</p>
+        </div>
 
-<footer>Rodapé</footer>
+        <div id="cursos">
+            <div class="curso1"><a href="projetos/curso1.html" class="link_curso1">NOME CURSO1</a></div>
+            <div class="projeto2"></div>
+            <div class="projeto3"></div>
+        </div>
+    </main>
+
+    <footer>Rodapé</footer>
 </body>
+
 </html>

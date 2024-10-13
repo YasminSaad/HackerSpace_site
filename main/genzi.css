@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap'); /*Fonte para títulos */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap'); /*Fonte para subtítulos */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap'); /*Fonte para textos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+    text-decoration: none;
+}
+
+:root {
+    --branco: #f2f3f5;
+    --verde-limao: #E9FC87;
+    --preto: #141414;
+    --verde2: #c6e7a3;
+}
+
+body {
+    background-color: #141414;
+}
+
+/* VIEW NO PC */
+
+.links_mobile {
+    display: none;
+}
+
+aside {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100px;
+
+    border-right: solid var(--branco) 2px;
+
+    background-color: blue;
+}
+
+.menu_lateral {
+    margin-top: 200px;
+}
+
+.menu_lateral a {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--verde-limao);
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 114px;
+
+    margin-left: 120px;
+
+    border-bottom: solid var(--branco) 2px;
+    
+    background-color: red;
+}
+
+#logo {
+    font-family: "Orbitron", sans-serif;
+    color: var(--verde-limao);
+    font-size: 52px;
+}
+
+.hiato {
+    height: 30px;
+
+    margin-left: 120px;
+
+    border-bottom: solid var(--branco) 2px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+
+    margin-left: 120px;
+
+    background-color: green
+}
+
+.btn_noticias {
+    font-family: "Orbitron", sans-serif;
+    color: var(--branco);
+    font-size: 20px;
+    border: 5px var(--verde-limao);
+}
+
+.quadro_intro {
+    height: 400px;
+    width: 870px;
+
+    border: solid var(--branco) 2px;
+}
+
+.raincode {
+    display: inline-flex;
+
+    gap: 10px;
+
+    transform: rotate(-90deg);
+}
+
+.raincode_txt1, .raincode_txt2, .raincode_txt3 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--verde-limao);
+    font-size: 8px;
+}
+
+#cursos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    margin-left: 120px;
+    background-color: yellow;
+}

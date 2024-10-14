@@ -177,11 +177,36 @@ main {
     background-repeat: no-repeat;
 }
 
-.curso1, .projeto2, .projeto3 {
+.projeto1_bloco_menor, .projeto2_bloco_menor, .projeto3_bloco_menor {
+    display: flex;
+    justify-content: center;
+
+    width: 164px;
+    height: 211px;
+
+    border: 2px solid var(--branco);
+}
+
+.projeto1_bloco_maior, .projeto2_bloco_maior, .projeto3_bloco_maior {
+    width: 200px;
+    height: 169px;
+
+    margin-top: -151px;
+    
+    border: 2px solid var(--verde-limao);
+
+    z-index: 1;
+}
+
+.projeto1, .projeto2, .projeto3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     width: 200px;
     height: 200px;
 
-    border: 2px solid #E9FC87;
+    background-color: pink;
 }
 
 footer {

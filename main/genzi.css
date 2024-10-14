@@ -33,7 +33,7 @@ aside {
     display: flex;
     flex-direction: column;
 
-    width: 100px;
+    width: 150px;
 
     border-right: solid var(--branco) 2px;
 
@@ -41,16 +41,49 @@ aside {
 }
 
 .menu_lateral {
-    margin-top: 200px;
+    margin-top: 170px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
 }
 
 .menu_lateral a {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--verde-limao);
 }
 
+.link_open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.link_manzanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.link_cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+}
 
 header {
     display: flex;
@@ -59,7 +92,7 @@ header {
 
     height: 114px;
 
-    margin-left: 120px;
+    margin-left: 150px;
 
     border-bottom: solid var(--branco) 2px;
     
@@ -75,7 +108,7 @@ header {
 .hiato {
     height: 30px;
 
-    margin-left: 120px;
+    margin-left: 150px;
 
     border-bottom: solid var(--branco) 2px;
 }
@@ -83,46 +116,76 @@ header {
 main {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
-    margin-left: 120px;
+    margin-left: 150px;
+    margin-bottom: 100px;
 
-    background-color: green
+    background-color: green;
+    
 }
 
 .btn_noticias {
+    margin-top: 30px;
+
+    text-align: center;
     font-family: "Orbitron", sans-serif;
-    color: var(--branco);
     font-size: 20px;
-    border: 5px var(--verde-limao);
+
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--branco);
 }
 
 .quadro_intro {
-    height: 400px;
-    width: 870px;
+    height: 300px;
+    width: 660px;
 
-    border: solid var(--branco) 2px;
+    margin-top: 30px;
+
+    background-image: url("img/quadro_intro.svg");
+    background-repeat: no-repeat;
 }
 
 .raincode {
     display: inline-flex;
+    justify-content: space-evenly;
 
-    gap: 10px;
+    width: 127px;
 
-    transform: rotate(-90deg);
+    margin-top: 30px;
 }
 
 .raincode_txt1, .raincode_txt2, .raincode_txt3 {
     font-family: "Orbitron", sans-serif;
     color: var(--verde-limao);
-    font-size: 8px;
+    font-size: 14px;
 }
 
 #cursos {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 130px;
+    margin-left: 80px;
+
+    width: 844px;
+    height: 350px;
+
+    background-image: url("img/cursos_desktop.svg");
+    background-repeat: no-repeat;
+}
+
+.curso1, .projeto2, .projeto3 {
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid #E9FC87;
 }
 
 footer {
-    margin-left: 120px;
+    border-top: solid var(--branco) 2px;
+
     background-color: yellow;
 }

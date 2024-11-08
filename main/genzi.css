@@ -37,7 +37,7 @@ aside {
 
     border-right: solid var(--branco) 2px;
 
-    background-color: blue;
+    /* background-color: blue;  */
 }
 
 .menu_lateral {
@@ -96,7 +96,7 @@ header {
 
     border-bottom: solid var(--branco) 2px;
     
-    background-color: red;
+    /* background-color: red;  */
 }
 
 #logo {
@@ -127,7 +127,7 @@ main {
     background-position: right bottom;
     background-attachment: all-scroll;
 
-    background-color: green;
+    /* background-color: green;  */
 }
 
 .btn_noticias {
@@ -190,17 +190,19 @@ main {
     width: 200px;
     height: 200px;
 
-    background-color: pink;
+    /* background-color: pink;  */
 }
 
 .projeto1_bloco_menor, .projeto2_bloco_menor, .projeto3_bloco_menor {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     width: 164px;
     height: 211px;
 
     border: 2px solid var(--branco);
+    background-color: #c6e7a3;
 }
 
 .projeto1_bloco_maior, .projeto2_bloco_maior, .projeto3_bloco_maior {
@@ -222,12 +224,31 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--branco);
+
+    order: 1;
 }
+
+.bloco_imagem {
+    margin-top: 50px;
+
+    width: 50px;
+    width: 50px;
+
+    border: 2px solid var(--branco);
+
+    object-fit: cover;
+
+    order: 2;
+}
+
+/* .projeto1_img, .projeto2_img, .projeto3_img {
+
+} */
 
 footer {
     border-top: solid var(--branco) 2px;
 
-    background-color: yellow;
+    /* background-color: yellow;  */
 }
 
 .back_foot {

@@ -8,6 +8,8 @@
     box-sizing: 0;
 
     text-decoration: none;
+
+    cursor: url("img/icons/cursor_standart.svg"), auto;
 }
 
 :root {
@@ -16,6 +18,31 @@
     --preto: #141414;
     --verde2: #c6e7a3;
 }
+
+@keyframes typingvert {
+    from {
+        height: 0;
+    }
+}
+
+@keyframes blinkingvert {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typinghorz {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinkinghorz {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 body {
     background-color: #141414;
@@ -33,7 +60,8 @@ aside {
     display: flex;
     flex-direction: column;
 
-    width: 150px;
+    width: 200px;
+    height: 1000px;
 
     border-right: solid var(--branco) 2px;
 
@@ -54,7 +82,7 @@ aside {
 .menu_lateral a {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--verde-limao);
 }
 
@@ -65,6 +93,8 @@ aside {
     flex-direction: column;
 
     gap: 15px;
+
+    cursor: url("img/icons/cursor_pointer.svg"), auto;
 }
 
 .link_manzanos {
@@ -74,6 +104,8 @@ aside {
     flex-direction: column;
 
     gap: 15px;
+
+    cursor: url("img/icons/cursor_pointer.svg"), auto;
 }
 
 .link_cursos {
@@ -83,6 +115,8 @@ aside {
     flex-direction: column;
 
     gap: 15px;
+
+    cursor: url("img/icons/cursor_pointer.svg"), auto;
 }
 
 header {
@@ -92,7 +126,7 @@ header {
 
     height: 114px;
 
-    margin-left: 150px;
+    margin-left: 200px;
 
     border-bottom: solid var(--branco) 2px;
     
@@ -106,9 +140,9 @@ header {
 }
 
 .hiato {
-    height: 30px;
+    height: 45px;
 
-    margin-left: 150px;
+    margin-left: 200px;
 
     border-bottom: solid var(--branco) 2px;
 }
@@ -130,26 +164,52 @@ main {
     /* background-color: green;  */
 }
 
-.btn_noticias {
+.news_caminho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 59.5875px;
+
     margin-top: 30px;
+    margin-left: 80px;
+
+    /* background-color: red;  */
+}
+
+.btn_noticias {
+    margin-top: 50px;
 
     text-align: center;
     font-family: "Orbitron", sans-serif;
-    font-size: 20px;
+    font-size: 36px;
 
     color: transparent !important;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--branco);
+
+    cursor: url("img/icons/cursor_pointer.svg"), auto;
+}
+
+.link_linha_news {
+    height: 1000px;
+    width: calc(100% - 10px); 
+
+    margin-top: 50px;
+    margin-left: 28px;
+
+    border-left: solid var(--branco) 5px;
 }
 
 .quadro_intro {
-    height: 300px;
-    width: 660px;
+    height: 400px;
+    width: 900px;
 
-    margin-top: 30px;
+    margin-top: 80px;
 
     background-image: url("img/quadro_intro.svg");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .raincode {
@@ -158,28 +218,34 @@ main {
 
     width: 127px;
 
-    margin-top: 30px;
+    margin-top: 75px;
 }
 
 .raincode_txt1, .raincode_txt2, .raincode_txt3 {
     font-family: "Orbitron", sans-serif;
     color: var(--verde-limao);
-    font-size: 14px;
+    font-size: 18px;
+
+    animation: typingvert 2s steps(10),
+    blinkingvert 1s infinite step-start;
 }
 
 #cursos {
+    position: absolute;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    margin-top: 130px;
-    margin-left: 80px;
+    margin-top: 580px;
+    margin-left: 178px;
 
-    width: 844px;
-    height: 350px;
+    width: 1070px;
+    height: 450px;
 
     background-image: url("img/cursos_desktop.svg");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .projeto1, .projeto2, .projeto3 {
@@ -202,12 +268,12 @@ main {
     height: 211px;
 
     border: 2px solid var(--branco);
-    background-color: #c6e7a3;
+    /* background-color: #c6e7a3; */
 }
 
 .projeto1_bloco_maior, .projeto2_bloco_maior, .projeto3_bloco_maior {
     width: 200px;
-    height: 169px;
+    height: 169px; 
 
     margin-top: -151px;
     
@@ -219,26 +285,26 @@ main {
 .link_projeto1, .link_projeto2, .link_projeto3 {
     margin-top: 20px;
 
+    width: 100%;
+
     font-family: "Chakra Petch", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
     color: var(--branco);
 
-    order: 1;
+    cursor: url("img/icons/cursor_pointer.svg"), auto;
 }
 
 .bloco_imagem {
-    margin-top: 50px;
+    margin-bottom: 55px;
+    margin-right: 48%;
 
     width: 50px;
-    width: 50px;
-
-    border: 2px solid var(--branco);
+    height: 50px;
 
     object-fit: cover;
-
-    order: 2;
 }
 
 /* .projeto1_img, .projeto2_img, .projeto3_img {
